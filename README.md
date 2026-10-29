@@ -4,7 +4,11 @@
 
 ### Sub 1-bit KV Cache Quantization for Looped Transformers
 
-[Overview](#overview) · [Supported Quantization Methods](#supported-quantization-methods) · [Quick Start](#quick-start) · [Experiments](#experiments) · [Repository Layout](#repository-layout)
+<a href="https://mscheong01.github.io/loopvq/"><img src="https://img.shields.io/badge/Project_Page-LoopVQ-1769e0?style=for-the-badge" alt="Project Page"></a>
+&nbsp;
+<img src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b?style=for-the-badge" alt="arXiv (coming soon)">
+
+**[Project Page](https://mscheong01.github.io/loopvq/)** · [Overview](#overview) · [Supported Quantization Methods](#supported-quantization-methods) · [Quick Start](#quick-start) · [Experiments](#experiments) · [Repository Layout](#repository-layout)
 
 </div>
 
