@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local environments and editors
+.env
+.venv/
+.idea/
+.vscode/
+.claude/
+.codex/
+.agents/
+.DS_Store
+
+# Generated experiment state
+/artifacts/
+/work/
+/datasets/
+**/outputs
+**/logs/
+*.log
+*.trace
+*.nsys-rep
+
+# Downloaded RULER corpus cache
+/tasks/niah/niah_corpus_essays.txt
+
+# LoopVQ generated state (codebook bundles, run caches, raw data)
+/experiments/artifacts/
+/experiments/work*/
+/experiments/loopvq_longbench*/data_raw
+/experiments/loopvq_longbench*/raw_backup
+/experiments/loopvq_longbench*/rows
+/experiments/*/table*.md
+/experiments/*/table*.tex
+/experiments/*/table*.png
+/experiments/*/figure_*
+/experiments/*/*.csv

@@ -1,0 +1,36 @@
+# GPQA-Diamond (198 questions), zero-shot, generative, for the thinking-on reasoning tables.
+#
+# The prompt is simple-evals' GPQA template ("Answer: $LETTER" on the last line). The four options
+# are shuffled per question, but with a seed derived from the question's Record ID -- upstream
+# lm_eval's gpqa tasks shuffle with the process RNG, so every arm and seed would see a different
+# option order and the comparison across arms would carry that noise too.
+#
+# Idavidrein/gpqa is gated (needs an accepted HF token). The calibration set of the loopvq bundles
+# is gpqa_main MINUS the diamond questions (build_ouro_bundle.py --calib-data gpqa_nodiamond), so
+# nothing scored here was seen at calibration.
+task: gpqa_diamond
+dataset_path: Idavidrein/gpqa
+dataset_name: gpqa_diamond
+output_type: generate_until
+training_split: train
+test_split: train
+process_docs: !function utils.process_docs
+doc_to_text: !function utils.doc_to_text
+doc_to_target: "{{answer}}"
+process_results: !function utils.process_results
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+generation_kwargs:
+  until:
+    - "</s>"
+    - "<|im_end|>"
+    - "<|eot_id|>"
+  do_sample: false
+  temperature: 0.0
+  max_gen_toks: 32768
+repeats: 1
+num_fewshot: 0
+metadata:
+  version: 1.0

@@ -1,0 +1,29 @@
+LoopVQ
+Copyright 2026 LoopVQ authors
+
+This distribution includes modified third-party software:
+
+SGLang
+  Copyright 2023-2026 SGLang Team
+  https://github.com/sgl-project/sglang
+  Licensed under the Apache License, Version 2.0.
+
+  The source under python/ is an SGLang fork adapted with KV cache storage,
+  quantization, and serving kernels for LoopVQ and the evaluated baselines, and
+  with the Huginn-0125 model. It is based on upstream revision
+  c554dc5c64b661f2c53225b03a76359eaddc39e4.
+
+TaSQ
+  Copyright 2026 TaSQ authors
+  Licensed under the Apache License, Version 2.0.
+
+  This repository is derived from the TaSQ code base (serving engine, harness,
+  and the TaSQ key transforms used by the TaSQ and TaSQ+LoopVQ arms).
+
+LongBench
+  Copyright 2023 THUDM
+  https://github.com/THUDM/LongBench
+  Licensed under the MIT License.
+
+  experiments/loopvq_longbench/lb/ holds the task prompts, generation lengths,
+  and metrics of the official evaluation.
