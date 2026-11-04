@@ -6,9 +6,9 @@
 
 <a href="https://mscheong01.github.io/loopvq/"><img src="https://img.shields.io/badge/Project_Page-LoopVQ-1769e0?style=for-the-badge" alt="Project Page"></a>
 &nbsp;
-<a href="https://www.alphaxiv.org/abs/2611.loopvq-kv-cache-quantization"><img src="https://img.shields.io/badge/Paper-alphaXiv-b31b1b?style=for-the-badge" alt="Paper (alphaXiv)"></a>
+<a href="https://arxiv.org/abs/2611.05304"><img src="https://img.shields.io/badge/arXiv-2611.05304-b31b1b?style=for-the-badge" alt="arXiv 2611.05304"></a>
 
-**[Project Page](https://mscheong01.github.io/loopvq/)** · **[Paper](https://www.alphaxiv.org/abs/2611.loopvq-kv-cache-quantization)** · [Overview](#overview) · [Supported Quantization Methods](#supported-quantization-methods) · [Quick Start](#quick-start) · [Experiments](#experiments) · [Repository Layout](#repository-layout)
+**[Project Page](https://mscheong01.github.io/loopvq/)** · **[Paper](https://arxiv.org/abs/2611.05304)** · [Overview](#overview) · [Supported Quantization Methods](#supported-quantization-methods) · [Quick Start](#quick-start) · [Experiments](#experiments) · [Repository Layout](#repository-layout)
 
 </div>
 
